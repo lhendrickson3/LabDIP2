@@ -17,9 +17,6 @@ public class Runner {
         TipCalculator tc1 = new BaggageServiceTipCalculator(BaggageServiceTipCalculator.ServiceQuality.GOOD, 5);
         TipCalculator tc2 = new BaggageServiceTipCalculator(BaggageServiceTipCalculator.ServiceQuality.POOR, 3);
         TipCalculator tc3 = new FoodServiceTipCalculator(FoodServiceTipCalculator.ServiceQuality.FAIR, 50);
-        
-        
-        TipCalculator[] tipCalculator = {tc1, tc2, tc3};
 
         CalculatorService cs = new CalculatorService();
 
