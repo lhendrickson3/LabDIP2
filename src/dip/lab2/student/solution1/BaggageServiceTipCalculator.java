@@ -12,7 +12,8 @@ public class BaggageServiceTipCalculator implements TipCalculator{
     private static final double MIN_BILL = 0.00;
     private static final double MAX_BILL = 100.00;
     private static final int ONE = 1;
-    private static final String FIRST = "bag count must be greater than or equal to zero";
+    private static final String BAG_COUNT = "bag count must be greater than or equal to zero";
+    private static final String BASE_TIP = "error: base tip must be greater than or equal to zero";
     private static final String BILL_ENTRY_ERR =
             "Error: bill must be between " + MIN_BILL + " and "
             + MAX_BILL;
@@ -64,7 +65,7 @@ public class BaggageServiceTipCalculator implements TipCalculator{
     public final void setBagCount(int bagCount) {
         if(bagCount < 0) {
             throw new IllegalArgumentException(
-                    FIRST);
+                    BAG_COUNT);
         }
         this.bagCount = bagCount;
     }
@@ -76,7 +77,7 @@ public class BaggageServiceTipCalculator implements TipCalculator{
     public void setBaseTipPerBag(double baseTipPerBag) {
         if(baseTipPerBag < 0) {
             throw new IllegalArgumentException(
-                    "error: base tip must be greater than or equal to zero");
+                    BASE_TIP);
         }
         this.baseTipPerBag = baseTipPerBag;
     }

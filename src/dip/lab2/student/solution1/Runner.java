@@ -25,11 +25,11 @@ public class Runner {
 
         NumberFormat nf = NumberFormat.getCurrencyInstance();
         
-        System.out.println("Your total is " +
+        System.out.println("Your total tip is " +
             nf.format(cs.getTipTotal(tc1)));
-        System.out.println("Your total is " +
+        System.out.println("Your total tip is " +
             nf.format(cs.getTipTotal(tc2)));
-        System.out.println("Your total is " +
+        System.out.println("Your totaltip is " +
             nf.format(cs.getTipTotal(tc3)));
     
     }
