@@ -24,17 +24,12 @@ public class Runner {
         CalculatorService cs = new CalculatorService();
 
         NumberFormat nf = NumberFormat.getCurrencyInstance();
-
-        for(int i=0; i < tipCalculator.length; i++) {
-            System.out.println("Employee " + (i+1) + " compensation:");
-            cs.getTipTotal(tipCalculator[i]);
-        }
         
-        System.out.println("Your total is $" +
+        System.out.println("Your total is " +
             nf.format(cs.getTipTotal(tc1)));
-        System.out.println("Your total is $" +
+        System.out.println("Your total is " +
             nf.format(cs.getTipTotal(tc2)));
-        System.out.println("Your total is $" +
+        System.out.println("Your total is " +
             nf.format(cs.getTipTotal(tc3)));
     
     }
