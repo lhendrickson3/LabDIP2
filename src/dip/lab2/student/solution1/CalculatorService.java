@@ -10,4 +10,7 @@ package dip.lab2.student.solution1;
  */
 public class CalculatorService {
     
+    public double getTipTotal(TipCalculator t) {
+        return t.getTip();
+    }
 }
